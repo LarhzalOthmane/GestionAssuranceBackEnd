@@ -1,0 +1,6 @@
+Editing entities: "http://localhost:8080/edit{entity}", method: POST
+Inserting entities: "http://localhost:8080/add{entity}", method: POST
+Deleting entities: "http://localhost:8080/delete{entity}", method: GET
+Showing all entities: "http://localhost:8080/{entity}s", method: GET
+Showing all entities paged: "http://localhost:8080/{entity}s?page={pageNumber}&size={pageSize}&limit={limit}", method: GET
+
