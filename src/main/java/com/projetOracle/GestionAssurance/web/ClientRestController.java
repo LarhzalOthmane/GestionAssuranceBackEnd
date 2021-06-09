@@ -28,6 +28,8 @@ public class ClientRestController {
     @Transactional
     public String editClient(@RequestBody Client client) {
         String message = "Client updated!";
+        Client client2 = repository.getById(client.getId());
+        System.out.println("client2: " + client2.getId() + " " + client2.getNom());
         repository.save(client);
         return message;
     }

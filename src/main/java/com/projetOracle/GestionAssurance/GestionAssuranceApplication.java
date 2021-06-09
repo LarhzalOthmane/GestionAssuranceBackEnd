@@ -42,4 +42,5 @@ public class GestionAssuranceApplication implements CommandLineRunner {
 		initService.initContrats();
 	}
 
+	
 }

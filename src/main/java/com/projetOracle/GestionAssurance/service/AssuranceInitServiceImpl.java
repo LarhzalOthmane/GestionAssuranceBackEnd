@@ -76,7 +76,7 @@ public class AssuranceInitServiceImpl implements IAssuranceInitService {
                 client.setCin(new Random().nextInt(1000) + "ABC");
                 client.setNom(name);
                 client.setStatus(statuses[new Random().nextInt(statuses.length)]);
-                client.setAdresse("123, Lot. Nassim, Hay Zohor, Ouislane, Meknès");
+                client.setAdresse("123, Lot. Nassim, Hay Zohor, Ouislane, 80050");
                 client.setFonction(fonction);
                 clientRepository.save(client);
             });

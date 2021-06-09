@@ -15,12 +15,14 @@ import javax.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Entity
 @Table(name = "InsClient")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 public class Client {
 
     @Id
@@ -35,4 +37,5 @@ public class Client {
     private String status;
     @OneToMany(mappedBy = "client", cascade = CascadeType.REMOVE, orphanRemoval = true)
     private Collection<Contrat> contrats;
+    
 }
