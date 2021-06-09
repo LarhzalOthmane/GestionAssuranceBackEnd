@@ -2,6 +2,7 @@ package com.projetOracle.GestionAssurance.entities;
 
 import java.util.Collection;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -32,6 +33,6 @@ public class Client {
     @ManyToOne
     private Fonction fonction;
     private String status;
-    @OneToMany(mappedBy = "client")
+    @OneToMany(mappedBy = "client", cascade = CascadeType.REMOVE, orphanRemoval = true)
     private Collection<Contrat> contrats;
 }

@@ -23,6 +23,6 @@ public class Contrat {
     private Categorie categorie;
     @ManyToOne
     private Agence agence;
-    @ManyToOne
+    @ManyToOne()
     private Client client;
 }
