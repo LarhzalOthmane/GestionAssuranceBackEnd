@@ -1,3 +1,4 @@
+  
 package com.projetOracle.GestionAssurance.security;
 
 import org.springframework.context.annotation.Configuration;
