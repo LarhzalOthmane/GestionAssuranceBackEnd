@@ -24,7 +24,7 @@ public class ClientRestController {
     @Autowired
     FonctionRepository fonctionRepository;
 
-    @PutMapping("/editClient/{id}")
+    @PutMapping("/editClient")
     @Transactional
     public String editClient(@RequestBody Client client) {
         String message = "Client updated!";
