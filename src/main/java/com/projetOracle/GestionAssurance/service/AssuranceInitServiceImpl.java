@@ -73,7 +73,7 @@ public class AssuranceInitServiceImpl implements IAssuranceInitService {
         fonctionRepository.findAll().forEach(fonction -> {
             Stream.of("Hamid Zrire9", "Hamid Lektef", "Titoss Larhzal").forEach(name -> {
                 Client client = new Client();
-                client.setCin("123ABC");
+                client.setCin(new Random().nextInt(1000) + "ABC");
                 client.setNom(name);
                 client.setStatus(statuses[new Random().nextInt(statuses.length)]);
                 client.setAdresse("123, Lot. Nassim, Hay Zohor, Ouislane, Meknès");
